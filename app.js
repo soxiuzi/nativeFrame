@@ -1,4 +1,6 @@
 //app.js
+import request from '/utils/request.js'
+
 App({
   onLaunch: function () {
     // 展示本地存储能力
@@ -33,7 +35,12 @@ App({
       }
     })
   },
+  request: new request,
   globalData: {
-    userInfo: null
+    userInfo: null,
+    loginURL: '', // 登录系统
+    serviceURL: '', // 业务系统
+    payURL: '', // 支付系统
+    token: '', // 请求凭证
   }
 })

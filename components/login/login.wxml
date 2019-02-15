@@ -1,0 +1,2 @@
+<!--components/login/login.wxml-->
+<button open-type='getUserInfo' bindgetuserinfo='WXlogin' class='my-class'>登录</button>
